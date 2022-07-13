@@ -44,7 +44,7 @@ spec:
           failureThreshold: 1
         livenessProbe:
           httpGet:
-            path: /wrong
+            path: /
             port: 8081
           initialDelaySeconds: 0
           periodSeconds: 10
