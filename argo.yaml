@@ -1,12 +1,12 @@
 apiVersion: argoproj.io/v1alpha1
-kind: application
+kind: Application
 metadata:
   name: argo-argo-yaml
   namespace: argocd
 spec: 
   project: default
   source:
-    repoURL: https://github.com/princeatoss/argogolang.git
+    repoURL: https://github.com/atossTraining/argogolang.git
     targetRevision: main
     path: argo
   destination:
