@@ -33,7 +33,7 @@ spec:
           - name: DATABASE_URL
             valueFrom:
               secretKeyRef:
-                key: url # the name from the configmap
+                key: test # the name from the configmap
                 name: db-secret 
         readinessProbe:
           httpGet:
