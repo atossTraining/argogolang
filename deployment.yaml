@@ -32,7 +32,7 @@ spec:
         env: 
           - name: DATABASE_URL
             valueFrom:
-              configMapKeyRef:
+              secretKeyRef:
                 key: url # the name from the configmap
                 name: db-secret 
         readinessProbe:
